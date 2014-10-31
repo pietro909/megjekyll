@@ -1,0 +1,54 @@
+{% assign background="white" %}
+{% assign foreground="yellow" %}
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body class="{{ background }} works">
+
+{% include header.html %}
+
+<section>
+    <aside>
+        <div class="navigation {{ foreground }} margin-right">
+            <a href="index.html"><img class="logo" src="assets/images/logo/{{foreground}}.svg"></a>
+            <nav class="works">
+                <a href="about.html">about</a>
+                <a href="works.html">works</a>
+                <a href="shops.html">shop</a>
+                <a href="https://www.tumblr.com/blog/magdaazab">blog</a>
+                <a href="contacts.html">contacts</a>
+            </nav>
+        </div>
+
+        <div class="works-container">
+            <a href="/" id="" class="item">
+
+                <figure class="">
+                    <figcaption>
+                        <h2>Illustration</h2>
+
+                        <h3>2014</h3>
+
+                        <p>
+                            London place and space
+                        </p>
+                    </figcaption>
+                    <img src="assets/images/works/6.jpg">
+                </figure>
+            </a>
+
+        </div>
+
+    </aside>
+
+    {{ content }}
+
+</section>
+
+{% include footer.html %}
+
+</body>
+
+</html>

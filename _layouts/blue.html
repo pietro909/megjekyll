@@ -1,0 +1,25 @@
+{% assign background="blue" %}
+{% assign foreground="grey" %}
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="{{ background }}">
+
+    {% include header.html %}
+
+    <section>
+      <aside>
+        {% include navigation.html %}
+      </aside>
+
+      {{ content }}
+
+    </section>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
