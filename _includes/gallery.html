@@ -5,51 +5,57 @@
 
         {% include navigation.html %}
 
-        <div class="works-container">
-
-            {% include works/london_multi.html %}
-            {% include works/london_multi.html %}
-            {% include works/london_multi.html %}
-
-        </div>
-
     </aside>
 
     <article class="works">
 
-        {% for post in site.posts %}
-        <a href="{{ site.prefix  }}{{ post.url }}" class="item">
+        {% for work in site.data.works_sx %}
+        <a href="{{ site.prefix  }}{{ work.url }}" class="item">
             <figure class="">
 
                 <figcaption style="background-color:{{backcolor}};color:{{forecolor}};">
 
-                    <h2>{{ post.title }}</h2>
+                    <h2>{{ work.title }}</h2>
 
-                    <h3>{{ post.date }}</h3>
+                    <h3>{{ work.date }}</h3>
 
                     <p>
-                        {{ post.short_description }}
+                        {{ work.short_description }}
                     </p>
 
                 </figcaption>
 
-                <img src="/assets/images/works/{{post.name}}/thumb.png">
+                <img src="/assets/images/works/{{work.name}}/thumb.png">
 
             </figure>
         </a>
         {% endfor %}
 
-        {% include works/london_multi.html %}
-        {% include works/london_multi.html %}
-        {% include works/london_multi.html %}
-
     </article>
 
     <article class="works">
 
-        {% include works/london_multi.html %}
-        {% include works/london_multi.html %}
-        {% include works/london_multi.html %}
+        {% for work in site.data.works_sx %}
+        <a href="{{ site.prefix  }}{{ work.url }}" class="item">
+            <figure class="">
+
+                <figcaption style="background-color:{{backcolor}};color:{{forecolor}};">
+
+                    <h2>{{ work.title }}</h2>
+
+                    <h3>{{ work.date }}</h3>
+
+                    <p>
+                        {{ work.short_description }}
+                    </p>
+
+                </figcaption>
+
+                <img src="/assets/images/works/{{work.name}}/thumb.png">
+
+            </figure>
+        </a>
+        {% endfor %}
 
     </article>
 
