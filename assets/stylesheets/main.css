@@ -226,7 +226,7 @@ body {
 body.grey {
   background-color: #cdd6ce;
 }
-body.works {
+body.white {
   background-color: #ffffff;
   color: #e8c200;
   overflow-y: scroll;
@@ -346,6 +346,14 @@ mark {
 .content nav a:last-child {
   border: none !important;
 }
+.navigation.blue,
+.content.blue {
+  border-top: 6px #25408e solid;
+}
+.navigation.blue nav > a,
+.content.blue nav > a {
+  border-bottom: 1px #25408e solid;
+}
 .navigation.yellow,
 .content.yellow {
   border-top: 6px #e8c200 solid;
@@ -357,7 +365,6 @@ mark {
 .navigation.grey,
 .content.grey {
   border-top: 6px #cdd6ce solid;
-  color: #cdd6ce;
 }
 .navigation.grey nav > a,
 .content.grey nav > a {

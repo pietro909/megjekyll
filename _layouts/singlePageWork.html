@@ -1,0 +1,28 @@
+{% assign background="white" %}
+{% assign foreground="yellow" %}
+
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body class="{{ background }} works">
+
+{% include header.html %}
+
+<section class="works">
+    <aside>
+        {% include navigation.html %}
+    </aside>
+
+    {{ content }}
+
+</section>
+
+{% include gallery.html %}
+
+{% include footer.html %}
+
+</body>
+
+</html>
