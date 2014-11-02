@@ -13,7 +13,7 @@
         <a href="{{ site.prefix  }}{{ work.url }}" class="item">
             <figure class="">
 
-                <figcaption style="background-color:{{backcolor}};color:{{forecolor}};">
+                <figcaption style="background-color:#{{work.backcolor}};color:#{{work.forecolor}};">
 
                     <h2>{{ work.title }}</h2>
 
@@ -35,11 +35,11 @@
 
     <article class="works">
 
-        {% for work in site.data.works_sx %}
+        {% for work in site.data.works_dx %}
         <a href="{{ site.prefix  }}{{ work.url }}" class="item">
             <figure class="">
 
-                <figcaption style="background-color:{{backcolor}};color:{{forecolor}};">
+                <figcaption style="background-color:#{{work.backcolor}};color:#{{work.forecolor}};">
 
                     <h2>{{ work.title }}</h2>
 
