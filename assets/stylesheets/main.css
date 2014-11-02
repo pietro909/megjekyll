@@ -352,6 +352,7 @@ mark {
 }
 .navigation.blue nav > a,
 .content.blue nav > a {
+  color: #25408e;
   border-bottom: 1px #25408e solid;
 }
 .navigation.yellow,

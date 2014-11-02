@@ -17,6 +17,28 @@
 
     <article class="works">
 
+        {% for post in site.posts %}
+        <a href="{{ site.prefix  }}{{ post.url }}" class="item">
+            <figure class="">
+
+                <figcaption style="background-color:{{backcolor}};color:{{forecolor}};">
+
+                    <h2>{{ post.title }}</h2>
+
+                    <h3>{{ post.date }}</h3>
+
+                    <p>
+                        {{ post.short_description }}
+                    </p>
+
+                </figcaption>
+
+                <img src="/assets/images/works/{{post.name}}/thumb.png">
+
+            </figure>
+        </a>
+        {% endfor %}
+
         {% include works/london_multi.html %}
         {% include works/london_multi.html %}
         {% include works/london_multi.html %}
